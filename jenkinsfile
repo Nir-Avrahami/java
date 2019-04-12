@@ -1,5 +1,3 @@
-pipeline {
-    agent any
 node {
    def mvnHome
    stage('Pull from Git') { 
@@ -13,4 +11,3 @@ node {
    sh label: '', script: 'mvn deploy'
       }
    }
-}
