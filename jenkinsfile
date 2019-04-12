@@ -1,3 +1,5 @@
+pipeline {
+    agent any
 node {
    def mvnHome
    stage('Pull from Git') { 
