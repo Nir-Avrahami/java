@@ -1,0 +1,13 @@
+node {
+   def mvnHome
+   stage('Pull from Git') { 
+      git 'https://github.com/gabytal/java.git'
+      mvnHome = '3.6.0'
+   }
+   stage('Build') {
+   sh label: '', script: 'mvn package'
+      }
+   stage('Push to Nexus') {
+   sh label: '', script: 'mvn deploy'
+      }
+   }
