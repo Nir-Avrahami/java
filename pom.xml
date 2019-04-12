@@ -8,10 +8,13 @@
 	<packaging>pom</packaging>
 	<version>0.3.1</version>
 	<distributionManagement>
-		<snapshotRepository>
+		<repository>
+			<uniqueVersion>false</uniqueVersion>
 			<id>maven-repo</id>
-			<url>http://172.16.1.101:8081/repository/maven-repo</url>
-		</snapshotRepository>
+			<name>maven-repo</name>
+			<url>http://172.16.1.101:8081/repository/maven-repo/</url>
+			<layout>default</layout>
+		</repository>
 	</distributionManagement>
 	<name>Time Tracker (Parent)</name>
 	<description>
